@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 MODELS_DIR = BASE_DIR / "models"
 DEFAULT_HOST = os.getenv("CAPTCHA_HOST", "0.0.0.0")
-DEFAULT_PORT = int(os.getenv("CAPTCHA_PORT", "8099"))
+DEFAULT_PORT = int(os.getenv("PORT") or os.getenv("CAPTCHA_PORT", "8099"))
 
 
 def load_characters(file_name: str) -> list[str]:
