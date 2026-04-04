@@ -2,6 +2,9 @@
 
 Project này cung cấp 3 endpoint giải captcha:
 
+- `GET /`
+- `GET /docs`
+- `GET /docs/deploy`
 - `POST /api/captcha/mb`
 - `POST /api/captcha/vcb`
 - `POST /api/captcha/bidv`
@@ -12,6 +15,9 @@ Project này cung cấp 3 endpoint giải captcha:
 - `models/`: model JSON, weights, artifact liên quan
 - `data/`: character sets cho từng model
 - `docs/`: ghi chú triển khai
+
+Khi mở `/`, app sẽ hiển thị docs hướng dẫn gọi API.
+Deploy guide được giữ riêng ở `GET /docs/deploy`.
 
 ## Chạy local
 
